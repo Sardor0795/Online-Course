@@ -7,7 +7,7 @@ import SellCard from "../../components/sellcard";
 
 const Home = () => {
   const banner = {
-    title: "Success is a habit",
+    title: "Full-Stack JS Web Developer",
     text: "Build your learning routine in 5F Courses.",
     buttonTo: "/course/frontend",
     buttonText: "Batafsil",
