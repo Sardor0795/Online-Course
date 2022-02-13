@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+@import "./assets/style/var";
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f7f7fc;
+  color: #11142d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #11142d;
+}
+
+button,
+input {
+  border: 0;
+  background: unset;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.link {
+  border: 0;
+  background-color: $color;
+  padding: 14px 24px;
+  border-radius: 8px;
+  color: #fff;
+  font-style: 16px;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+.btitle {
+  font-size: 31px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  display: flex;
+}
+
+.wrapper {
+  @include fb(calc(100vw - 256px));
+  padding: 32px;
+  height: calc(100vh - 80px);
+  overflow: auto;
+}
+
+.row {
+  display: flex;
+  margin-right: -16px;
+  margin-left: -16px;
+  flex-wrap: wrap;
+}
+
+.col-8 {
+  @include fb(66.666%);
+  padding: 0 16px;
+}
+
+.col-4 {
+  @include fb(33.333%);
+  padding: 0 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.more {
+  font-weight: 700;
+  color: $color;
+  font-size: 16px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}

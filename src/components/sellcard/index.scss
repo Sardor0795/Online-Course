@@ -1,0 +1,77 @@
+@import "../../assets/style/var";
+
+.sellcard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  &__img {
+    position: relative;
+    height: 203px;
+    @include bg;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  &__best {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 5.5px 8px;
+    color: $color;
+    background-color: #dbd7f4;
+    border-radius: 4px;
+    font-style: 12px;
+    font-weight: 700;
+  }
+  &__title {
+    font-style: 24px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 16px;
+    &:hover {
+      color: $color;
+    }
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &__img {
+      height: 32px;
+      width: 32px;
+      @include bg;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+    &__name {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  &__grade {
+    color: #f2870d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    i {
+      margin-right: 9px;
+    }
+  }
+  &__mark {
+    color: #9a9ab0;
+  }
+  &__price {
+    color: #42bda1;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 16px;
+  }
+  &__oldprice {
+    color: #9a9ab0;
+    font-size: 16px;
+    font-weight: 70;
+    text-decoration: line-through;
+  }
+  .link {
+    margin-left: auto;
+  }
+}
