@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Banner from "../../components/banner";
-import OwnCard from "../../components/owncard";
-import Progress from "../../components/progress";
-import SellCard from "../../components/sellcard";
+import Banner from "../components/banner";
+import OwnCard from "../components/owncard";
+import Progress from "../components/progress";
+import SellCard from "../components/sellcard";
 
 const Home = () => {
   const banner = {
